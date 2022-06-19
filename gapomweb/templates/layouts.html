@@ -78,6 +78,14 @@
           <li><a href="thehvacmarketplace.shop">Hvac Shop</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
 
+
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'profile' %}">My Profile</a></li>
+          {% else %}
+          <li><a href="{% url 'profile' %}">My Account</a></li>
+          {% endif %}
+
+
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -112,7 +120,7 @@
             <p>
               Blk. 2 Flat 16 <br>
               LSDPC Estate Sogunro<br>
-            Ogba Lagos,Nigeria <br><br>
+            Ogba Lagos, Nigeria <br><br>
               <strong>Phone:</strong> +234 8063 496147<br>
               <strong>Email:</strong> info@thehvacmarketplace.shop<br>
             </p>
@@ -132,17 +140,17 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Hvac Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Hvac Installation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Hvac Sales</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Hvac Services Maintenance</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Project Supervision & Management</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>Do you want to know how we can serve you better?<br>Kindly subscribe to our newsletter.</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
