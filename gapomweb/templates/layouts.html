@@ -56,34 +56,15 @@
           <li class="active"><a href="{% url 'home' %}">Home</a></li>
           <li><a href="{% url 'about' %}">About</a></li>
 
-          <li class="drop-down"><a href="{% url 'services' %}">Services</a>
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="team.html">Team</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+          <li><a href="{% url 'services' %}">Services</a>
+
 
 
           <li><a href="{% url 'projects' %}">Projects</a></li>
-          <li><a href="thehvacmarketplace.shop">Hvac Shop</a></li>
+          <li><a href="https://thehvacmarketplace.shop">Hvac Shop</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
 
 
-          {% if user.is_authenticated %}
-          <li><a href="{% url 'profile' %}">My Profile</a></li>
-          {% else %}
-          <li><a href="{% url 'profile' %}">My Account</a></li>
-          {% endif %}
 
 
         </ul>

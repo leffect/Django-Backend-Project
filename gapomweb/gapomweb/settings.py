@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'index',
     'contact',
     'authentication',
+    'aboutinfo',
+    'services',
 ]
 
 MIDDLEWARE = [
