@@ -25,7 +25,8 @@ class client(models.Model):
 
 class service6(models.Model):
     servicename = models.CharField(max_length=400, blank=False)
-    description = models.CharField(max_length=800, blank=False)
+    description = models.TextField(max_length=800, blank=False)
+
     def __str__(self):
         return self.servicename
 
@@ -42,5 +43,6 @@ class mega67(models.Model):
     iconboxc = models.TextField(max_length=800, blank=False)
     dcode = models.TextField(max_length=800, blank=False)
     icondx = models.CharField(max_length=200, blank=False)
+
     def __str__(self):
         return self.nameserve

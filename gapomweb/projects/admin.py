@@ -1,6 +1,5 @@
 from django.contrib import admin
-
-from .models import serve77
+from .models import projectile
 
 # Register your models here.
-admin.site.register(serve77)
+admin.site.register(projectile)

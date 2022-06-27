@@ -20,6 +20,3 @@ def home(request):
     'mega67': mega67data
     }
     return render(request,'index.html',context)
-
-def projects(request):
-    return render(request,'projects.html')
